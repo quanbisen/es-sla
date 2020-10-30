@@ -3,7 +3,7 @@ create user elastic identified by '123456';
 grant all privileges on elasticsearch.* to elastic;
 create table es_sla
 (
-	id bigint(20) unsigned primary key auto_increment,
+    id bigint(20) unsigned primary key auto_increment,
     from_time datetime,
     from_timestamp int unsigned,
     to_time datetime,
